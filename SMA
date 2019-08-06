@@ -1,0 +1,4 @@
+study("My simple moving average", overlay=true)
+MySMA_Length = input(5,title="SMA Length")
+MySMA =ema(close,MySMA_Length)
+plot(MySMA, title="SMA Line", color=black, linewidth= 5)
